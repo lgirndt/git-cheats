@@ -3,6 +3,7 @@ layout: default
 title: Git Cheat Sheet
 ---
 
+* the table of contents
 {:toc}
 
 ## Branches
