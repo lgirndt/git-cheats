@@ -6,7 +6,7 @@ title: Git Cheat Sheet
 * the table of contents
 {:toc}
 
-## Branches
+# Branches
 
 Branch erstellen
 
@@ -50,6 +50,8 @@ Remote Repository ansehen
 
 	$ git remote show origin
 
+# Serving a Repository
+
 Git Repository serven
 
 	$ git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
@@ -59,6 +61,7 @@ Alias dafür bauen
 
 	$ git config --global alias.serve '!git daemon --reuseaddr --verbose --base-path=. --export-all ./.git'
 
+# Analyzing Commits
 
 Incoming Commits von Remote auf einem Branch sehen
 
