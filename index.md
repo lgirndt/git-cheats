@@ -3,27 +3,49 @@ layout: default
 title: Git Cheat Sheet
 ---
 
+# Table of Contents
+
 * the table of contents
 {:toc}
 
+# Repositories
+
+Create a repository
+
+	$ cd MyProject
+	$ git init
+
+Clone locally 
+
+	$ git clone /path/to/repo
+	
+Actually this will clone the repository with hard links, meaning it awesomely fast. If you want
+git to copy the repository instead, do it like
+	
+	$ git clone file://path/to/repo
+
 # Branches
 
-Branch erstellen
+List existing branches
+
+	$ git branch
+  	groovy-experimental
+	* master
+  	sql-table-type
+
+Create a local branch
 
 	$ git branch feature-3
 
-
-Branch erstellen und sofort drauf arbeiten
-
-	$ git branch checkout -b feature-3
-
-
-Auf Branch wechseln
+Switch to a branch
 
 	$ git checkout feature-3
 
+Creating a new branch and checking it out in one go
 
-Remote Branch erstellen
+	$ git branch checkout -b feature-3
+
+Create a branch locally and push it to a remote repository
 
 	$ git checkout -b feature-3
 	$ git push origin feature-3
