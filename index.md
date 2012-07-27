@@ -26,12 +26,36 @@ git to copy the repository instead, do it like
 
 # Branches
 
+## List Branches
+
 List existing branches
 
 	$ git branch
   	groovy-experimental
 	* master
   	sql-table-type
+
+List remote tracking branches
+
+	$ git branch -r
+	  default/master
+	  github/master
+
+List all branches (and more) on remote
+
+	$ git remote show github
+	* remote github
+	  Fetch URL: git@github.com:brands4friends/daleq.git
+	  Push  URL: git@github.com:brands4friends/daleq.git
+	  HEAD branch: master
+	  Remote branch:
+	    master tracked
+	  Local branch configured for 'git pull':
+	    master merges with remote master
+	  Local ref configured for 'git push':
+	    master pushes to master (up to date)
+
+## Working on Branches
 
 Create a local branch
 
