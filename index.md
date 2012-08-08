@@ -80,21 +80,23 @@ Branch Löschen
 	$ git branch -d feature-3
 
 
-Remote Branch löschen
+### Remote Branches
 
-	$ git push origin :feature-6
+View remote branches
 
-Remote Branch ziehen, der noch nicht lokal existiert
+	$ git remote show origin
+
+Create a Remote Branch (and track it)
 
 	$ git checkout --track origin/feature-5
 
-mit fetch kommen die aber scheinbar rein, also dann reicht git checkout auch Änderungen in Working Directory zurückrollen.
+Let an existing branch track a remote branch
 
-	$ git checkout -- file
+	$ git branch --set-upstream feature-1 origin/feature-1
 
-Remote Repository ansehen
+Delete a Remote branch
 
-	$ git remote show origin
+	$ git push origin :feature-6
 
 # Serving a Repository
 
