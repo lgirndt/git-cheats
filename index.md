@@ -80,7 +80,7 @@ Branch Löschen
 	$ git branch -d feature-3
 
 
-### Remote Branches
+## Remote Branches
 
 View remote branches
 
