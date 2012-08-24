@@ -97,6 +97,10 @@ Let an existing branch track a remote branch
 Delete a Remote branch
 
 	$ git push origin :feature-6
+	
+Change tracking branch for local branch
+
+	$ git branch --set-upstream master origin/master
 
 # Serving a Repository
 
