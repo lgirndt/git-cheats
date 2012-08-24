@@ -75,7 +75,7 @@ Create a branch locally and push it to a remote repository
 	$ git push origin feature-3
 
 
-Branch Löschen
+Delete a branch
 
 	$ git branch -d feature-3
 
