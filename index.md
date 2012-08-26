@@ -104,12 +104,12 @@ Change tracking branch for local branch
 
 # Serving a Repository
 
-Git Repository serven
+Serve a  repository
 
 	$ git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
 
 
-Alias dafür bauen
+And as an alias
 
 	$ git config --global alias.serve '!git daemon --reuseaddr --verbose --base-path=. --export-all ./.git'
 
