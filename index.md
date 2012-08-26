@@ -97,6 +97,10 @@ Let an existing branch track a remote branch
 Delete a Remote branch
 
 	$ git push origin :feature-6
+	
+Clean stale remote branches from your local repository. This might be necessary if you still see remote branches, which have been deleted by others.
+
+	$ git remote prune origin
 
 # Serving a Repository
 
